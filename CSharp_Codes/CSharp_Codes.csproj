@@ -5,7 +5,7 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<StartupObject>CSharp_Codes.Programs_On_Numbers.SquareRootOfNumber</StartupObject>
+		<StartupObject>CSharp_Codes.Programs_On_Date_Time_Year.Leap_Year</StartupObject>
 	</PropertyGroup>
 
 </Project>
