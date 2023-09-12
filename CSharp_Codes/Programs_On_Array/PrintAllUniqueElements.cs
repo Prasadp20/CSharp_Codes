@@ -36,14 +36,31 @@ namespace CSharp_Codes.Programs_On_Array
 
 		private static void PrintUniqueElements(int[] arr, int size)
 		{
-			for (int i = 0; i < size; i++)
+			for (int i = 0; i < size - 1; i++)
 			{
-				for (int j = 0; j < size; j++)
+				bool isUnique = true;
+
+				for (int j = 0; j < i; j++)
 				{
-					if (arr[i] != arr[j])
+					if (arr[i] == arr[j])
 					{
-						Console.Write(arr[i] + "  ");
+						isUnique = false;
+						break;
 					}
+				}
+
+				for (int k = i + 1; k < size; k++)
+				{
+					if (arr[i] == arr[k])
+					{
+						isUnique = false;
+						break;
+					}
+				}
+
+				if (isUnique)
+				{
+					Console.WriteLine(arr[i] + "");
 				}
 			}
 		}
